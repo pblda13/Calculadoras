@@ -1,0 +1,14 @@
+C:\Users\017542631\source\repos\SolicitarCalc\SolicitarCalc\bin\Debug\netcoreapp3.1\SolicitarCalc.exe
+C:\Users\017542631\source\repos\SolicitarCalc\SolicitarCalc\bin\Debug\netcoreapp3.1\SolicitarCalc.deps.json
+C:\Users\017542631\source\repos\SolicitarCalc\SolicitarCalc\bin\Debug\netcoreapp3.1\SolicitarCalc.runtimeconfig.json
+C:\Users\017542631\source\repos\SolicitarCalc\SolicitarCalc\bin\Debug\netcoreapp3.1\SolicitarCalc.runtimeconfig.dev.json
+C:\Users\017542631\source\repos\SolicitarCalc\SolicitarCalc\bin\Debug\netcoreapp3.1\SolicitarCalc.dll
+C:\Users\017542631\source\repos\SolicitarCalc\SolicitarCalc\bin\Debug\netcoreapp3.1\SolicitarCalc.pdb
+C:\Users\017542631\source\repos\SolicitarCalc\SolicitarCalc\obj\Debug\netcoreapp3.1\SolicitarCalc.csproj.AssemblyReference.cache
+C:\Users\017542631\source\repos\SolicitarCalc\SolicitarCalc\obj\Debug\netcoreapp3.1\SolicitarCalc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\017542631\source\repos\SolicitarCalc\SolicitarCalc\obj\Debug\netcoreapp3.1\SolicitarCalc.AssemblyInfoInputs.cache
+C:\Users\017542631\source\repos\SolicitarCalc\SolicitarCalc\obj\Debug\netcoreapp3.1\SolicitarCalc.AssemblyInfo.cs
+C:\Users\017542631\source\repos\SolicitarCalc\SolicitarCalc\obj\Debug\netcoreapp3.1\SolicitarCalc.csproj.CoreCompileInputs.cache
+C:\Users\017542631\source\repos\SolicitarCalc\SolicitarCalc\obj\Debug\netcoreapp3.1\SolicitarCalc.dll
+C:\Users\017542631\source\repos\SolicitarCalc\SolicitarCalc\obj\Debug\netcoreapp3.1\SolicitarCalc.pdb
+C:\Users\017542631\source\repos\SolicitarCalc\SolicitarCalc\obj\Debug\netcoreapp3.1\SolicitarCalc.genruntimeconfig.cache
