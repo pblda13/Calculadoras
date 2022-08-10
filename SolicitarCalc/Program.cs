@@ -6,42 +6,91 @@ namespace SolicitarCalc
 {
     class Program
     {
-
-        static float Imc()
+        public static string CalcclassifiIMC(double P, double A)
         {
-            float imc;
+
+
+            double imc = P / (A * A);
+
+            if (imc < 18.49)
+            {
+                return ("Peso abaixo do normal ");
+            }
+            else if (imc <= 24.99)
+            {
+                return ("Peso normal ");
+            }
+            else if (imc <= 29.99)
+
+            {
+                return ("Sobre o Peso ");
+            }
+            else if (imc <= 34.99)
+            {
+                return ("Grau de Obesidade I ");
+            }
+            else if (imc <= 39.99)
+            {
+                return ("Grau de Obesidade II ");
+            }
+            else
+            {
+                return ("Obesidade Grau III ");
+            }
+
+        }
+
+        static void CalcImc()
+        {
+            double P, A;
 
             Console.WriteLine("Calculadora IMC");
             Console.WriteLine();
             Console.WriteLine("Informe seu peso");
-            float P = float.Parse(Console.ReadLine());
+            P = double.Parse(Console.ReadLine());
             Console.WriteLine("Informe seu Altura");
-            float A = float.Parse(Console.ReadLine());
+            A = double.Parse(Console.ReadLine());
             Console.WriteLine();
 
-            imc = (P / (A * A));
-
-            return imc;
+            Console.WriteLine(CalcclassifiIMC(P, A));
 
         }
+        //-----------------------------------------------------------------------------------------------------------------
+        public static double Calculoarea(double r)
 
-        static double AreaCirculo()
         {
-            Console.WriteLine("Calculadora Area Circulo");
-            Console.WriteLine();
-            Console.WriteLine("Informe o raio");
-            double r = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            Console.WriteLine();
             double pi = 3.14159;
             double a = pi * (r * r);
 
             return a;
 
         }
-
-        static double Regrade_3()
+        static void AreaCirculo()
         {
-            double A, B, C, resultado;
+            Console.WriteLine("Calculadora Area Circulo");
+            Console.WriteLine();
+            Console.WriteLine("Informe o raio");
+            double r = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            Console.WriteLine();
+
+            Console.WriteLine(Calculoarea(r));
+
+
+        }
+
+        //-----------------------------------------------------------------------------------------------------------------
+
+        public static double CalculoRegra(double A, double B,double C)
+        {
+           
+            double resultado = (A * B) / C;
+
+            return resultado;
+        }
+
+        static void Regrade_3()
+        {
+            double A, B, C;
             Console.WriteLine("Calculadora regra de 3");
             Console.WriteLine();
             Console.WriteLine("Digite o valor de A");
@@ -51,9 +100,7 @@ namespace SolicitarCalc
             Console.WriteLine("Digite o valor de C ");
             C = double.Parse(Console.ReadLine());
 
-            resultado = (A * B) / C;
-
-            return resultado;
+            Console.WriteLine(CalculoRegra( A,B,C));
 
         }
 
@@ -71,33 +118,7 @@ namespace SolicitarCalc
 
             if (nun == 1)
             {
-                float imc = Imc();
-
-                if (imc < 18.5)
-                {
-                    Console.WriteLine("Peso abaixo do normal " + imc.ToString("F2"));
-                }
-                else if ((imc == 18.5) || (imc == 25))
-                {
-                    Console.WriteLine("Peso normal " + imc.ToString("F2"));
-                }
-                if ((imc > 25) || (imc == 30))
-
-                {
-                    Console.WriteLine("Sobre o Peso " + imc.ToString("F2"));
-                }
-                else if ((imc > 30) || (imc == 35))
-                {
-                    Console.WriteLine("Grau de Obesidade I " + imc.ToString("F2"));
-                }
-                if ((imc > 35) || (imc == 40))
-                {
-                    Console.WriteLine("Grau de Obesidade II " + imc.ToString("F2"));
-                }
-                else if (imc > 40)
-                {
-                    Console.WriteLine("Obesidade Grau III " + imc.ToString("F2"));
-                }
+                CalcImc();
 
                 Console.ReadKey();
 
@@ -105,20 +126,16 @@ namespace SolicitarCalc
 
             else if (nun == 2)
             {
-                double a = AreaCirculo();
 
-                Console.WriteLine(" A = " + a.ToString("0.00"), CultureInfo.InvariantCulture);
+                AreaCirculo();
 
                 Console.ReadKey();
-
 
             }
 
             else if (nun == 3)
             {
-                double resultado = Regrade_3();
-
-                Console.WriteLine("O resultado é " + resultado, CultureInfo.InvariantCulture);
+                Regrade_3();
 
                 Console.ReadKey();
 
